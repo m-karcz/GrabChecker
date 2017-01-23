@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.info = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // info
+            // 
+            this.info.AutoSize = true;
+            this.info.Location = new System.Drawing.Point(12, 32);
+            this.info.Name = "info";
+            this.info.Size = new System.Drawing.Size(66, 13);
+            this.info.TabIndex = 0;
+            this.info.Text = "Last check: ";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(208, 75);
+            this.Controls.Add(this.info);
+            this.Name = "Form1";
+            this.Text = "GrabioChecker";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label info;
     }
 }
 
